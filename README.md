@@ -62,10 +62,6 @@ readme_gen/
   cli.py             # Typer-based CLI
 ```
 
-## 🤝 Contributing
-
-PRs welcome! Good first issues are tagged `good first issue`. Ideas: theme support, SVG charts, GitHub Action to auto-update your profile daily.
-
 ## 📄 License
 
 MIT — see [LICENSE](LICENSE).
@@ -92,9 +88,9 @@ MIT — see [LICENSE](LICENSE).
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LeoBanned&layout=compact&hide_border=true&langs_count=8&theme=tokyonight" alt="top languages"/>
 </p>
 
-<h3 align="center">🏆 Trophies</h3>
+<h3 align="center">📅 Contribution Graph</h3>
 <p align="center">
-  <a href="https://github.com/LeoBanned"><img src="https://github-profile-trophy.vercel.app/?username=LeoBanned&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1&column=7" alt="trophies"/></a>
+  <a href="https://github.com/LeoBanned"><img src="https://github-readme-activity-graph.vercel.app/graph?username=LeoBanned&theme=tokyo-night&hide_border=true&area=true&radius=8" alt="activity graph" width="95%"/></a>
 </p>
 
 <h3 align="center">⭐ Featured Projects</h3>
@@ -105,4 +101,5 @@ MIT — see [LICENSE](LICENSE).
   <a href="https://github.com/LeoBanned/pirate-station-cracks"><img src="https://github-readme-stats.vercel.app/api/pin/?username=LeoBanned&repo=pirate-station-cracks&hide_border=true&theme=tokyonight" alt="pirate-station-cracks"/></a>
 </p>
 
-<p align="center"><sub>✨ Generated with [readme-gen](https://github.com/topics/readme-generator)</sub></p>
+<p align="center"><sub>✨ Generated with <a href="https://github.com/topics/readme-generator">readme-gen</a></sub></p>
+
