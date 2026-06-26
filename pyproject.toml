@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "readme-gen"
+version = "0.1.0"
+description = "Generate a beautiful GitHub profile README from your public data."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "LeoBanned" }]
+keywords = ["github", "readme", "generator", "profile", "cli"]
+dependencies = [
+    "requests>=2.31.0",
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+readme-gen = "readme_gen.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/LeoBanned/readme-gen"
+Issues = "https://github.com/LeoBanned/readme-gen/issues"
+
+[tool.setuptools.packages.find]
+include = ["readme_gen*"]
