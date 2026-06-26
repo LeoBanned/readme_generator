@@ -1,28 +1,71 @@
-<h1 align="center">Hi, I’m LeoBanned 👋</h1>
-<p align="center"><img src="https://avatars.githubusercontent.com/u/53294625?v=4" width="120" style="border-radius:50%" alt="avatar"/></p>
+# readme-gen 📝
 
-<p align="center">
-![Followers](https://img.shields.io/badge/Followers-1-1f6feb?style=for-the-badge&logo=github&logoColor=white)
-![Stars](https://img.shields.io/badge/Total%20Stars-0-f1c40f?style=for-the-badge&logo=github&logoColor=white)
-![Repos](https://img.shields.io/badge/Public%20Repos-5-2ecc71?style=for-the-badge&logo=github&logoColor=white)
-![Following](https://img.shields.io/badge/Following-0-9b59b6?style=for-the-badge&logo=github&logoColor=white)
-![Profile Views](https://komarev.com/ghpvc/?username=LeoBanned&style=for-the-badge&color=blueviolet)
-</p>
+> Generate a **beautiful GitHub profile README** from your public data — in one command.
 
-<h3 align="center">📊 Top Languages</h3>
+`readme-gen` fetches your public GitHub profile (followers, total stars, top languages, featured repositories) and renders a polished `README.md` with badges, a language bar, and your best projects. Perfect for your profile repo (`yourname/yourname`).
 
-```text
-Python        ██████████░░░░░░░░░░ 50%
-Batchfile     ██████████░░░░░░░░░░ 50%
+## ✨ Features
+
+- 📊 Auto-built **stat badges** (followers, total stars, public repos)
+- 🌈 **Top languages** bar chart from your repositories
+- ⭐ **Featured projects** ranked by stars
+- 🌐 Website / location / company line
+- 🚀 Single command, zero config — works without a token
+
+## 📦 Installation
+
+```bash
+pip install -r requirements.txt
+# or install as a CLI tool
+pip install .
 ```
 
-<h3 align="center">⭐ Featured Projects</h3>
+## 🔧 Usage
 
-- **[readme_gen](https://github.com/LeoBanned/readme_gen)** ★ 0 · ⑂ 0<br/>Generate a beautiful GitHub profile README from your public data — in one command
-- **[pirate-station-bots](https://github.com/LeoBanned/pirate-station-bots)** ★ 0 · ⑂ 0 · `Python`
-- **[pirate-station-hv](https://github.com/LeoBanned/pirate-station-hv)** ★ 0 · ⑂ 0 · `Batchfile`
-- **[pirate-station-cracks](https://github.com/LeoBanned/pirate-station-cracks)** ★ 0 · ⑂ 0
-- **[pirate-station-reviews](https://github.com/LeoBanned/pirate-station-reviews)** ★ 0 · ⑂ 0<br/>Отзывы пользователей Пиратской станции
+```bash
+# Preview in the terminal
+readme-gen torvalds --preview
 
----
-<p align="center"><sub>Generated with ❤️ by [readme-gen](https://github.com/topics/readme-generator)</sub></p>
+# Write to README.md
+readme-gen torvalds -o README.md
+
+# Customize number of featured repos
+readme-gen torvalds --top 8
+
+# Use a token to raise API rate limits
+export GITHUB_TOKEN=ghp_xxx
+readme-gen LeoBanned
+```
+
+If you don't install the package, run it as a module:
+
+```bash
+python -m readme_gen.cli torvalds --preview
+```
+
+## 🧩 Options
+
+| Option | Description |
+|---|---|
+| `--output, -o` | Output file path (default `README.md`) |
+| `--top, -t` | Number of featured repositories (default `5`) |
+| `--token` | GitHub token, or set `GITHUB_TOKEN` env var |
+| `--preview` | Print to the console instead of writing a file |
+
+## 📁 Project structure
+
+```
+readme_gen/
+  __init__.py        # package metadata
+  github_client.py   # GitHub REST API client + data models
+  generator.py       # Markdown rendering
+  cli.py             # Typer-based CLI
+```
+
+## 🤝 Contributing
+
+PRs welcome! Good first issues are tagged `good first issue`. Ideas: theme support, SVG charts, GitHub Action to auto-update your profile daily.
+
+## 📄 License
+
+MIT — see [LICENSE](LICENSE).
