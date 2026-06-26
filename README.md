@@ -62,11 +62,6 @@ readme_gen/
   cli.py             # Typer-based CLI
 ```
 
-## 📄 License
-
-MIT — see [LICENSE](LICENSE).
-
-
 <p align="center">
   <a href="https://github.com/LeoBanned"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=800&center=true&vCenter=true&width=600&lines=Hi%2C%20I%27m%20LeoBanned%3BWelcome%20to%20my%20GitHub" alt="header"/></a>
 </p>
